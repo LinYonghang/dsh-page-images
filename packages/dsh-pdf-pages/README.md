@@ -17,6 +17,14 @@
 
 插件依赖 `@deepseek-ai/libreoffice-kit`、`@deepseek-ai/dsh-tools`、`@deepseek-ai/dsh-llm` 等**随 DSH 发行版提供**的包，profile 的包解析器会让它们从安装目录解析，所以插件本身不需要安装任何第三方依赖。
 
+最省事的是直接从仓库装（会进 profile 的 lockfile，之后的 `pnpm install` 不会把它清掉）：
+
+```sh
+dsh plugin --profile desktop add github:LinYonghang/dsh-page-images#path:/packages/dsh-pdf-pages
+```
+
+也可以自己打包：
+
 ```sh
 # 1. 打包（在插件目录内）
 npm pack                     # 得到 dsh-pdf-pages-0.1.0.tgz
@@ -27,6 +35,8 @@ dsh plugin --profile desktop add ./dsh-pdf-pages-0.1.0.tgz
 # 3. 把 bundle 登记进 profile 组合
 #    编辑 ~/.dsh/profiles/desktop/package.json，在 dsh.profile.bundles 里加入 "dsh-pdf-pages"
 ```
+
+> 不要把包直接拷进 `node_modules`：profile 里任何一次 `pnpm install` 都会清掉没写进 `dependencies` 的目录。
 
 也可以在插件市场/插件管理页里以本地 bundle 的方式安装（等价于上面三步）。安装后**重启 DSH**（profile 组合在启动时计算），插件的行会出现在插件列表里，工具 `pdf_pages` 会出现在模型的工具表里。
 

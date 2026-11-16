@@ -31,6 +31,12 @@ dsh plugin --profile desktop add ./dsh-slide-pages-0.1.0.tgz
 # 再把 "dsh-slide-pages" 加入 ~/.dsh/profiles/desktop/package.json 的 dsh.profile.bundles
 ```
 
+或者直接从仓库装（会进 profile 的 lockfile，之后的 `pnpm install` 不会把它清掉）：
+
+```sh
+dsh plugin --profile desktop add github:LinYonghang/dsh-page-images#path:/packages/dsh-slide-pages
+```
+
 安装后重启 DSH（profile 组合在启动时计算）。工具 `slide_pages` 会出现在模型的工具表里，插件的行会出现在插件列表里。
 
 ## 配置
