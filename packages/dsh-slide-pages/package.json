@@ -39,10 +39,10 @@
     "url": "https://github.com/LinYonghang/dsh-page-images/issues"
   },
   "peerDependencies": {
-    "@deepseek-ai/cordis": "*",
-    "@deepseek-ai/dsh-attachment": "*",
-    "@deepseek-ai/dsh-llm": "*",
-    "@deepseek-ai/dsh-tools": "*"
+    "@deepseek-ai/cordis": ">=0.2.0-rc.1 <0.2.1-0 || >=0.2.2-rc.1 <0.3.0-0",
+    "@deepseek-ai/dsh-attachment": ">=0.2.0-rc.1 <0.2.1-0 || >=0.2.2-rc.1 <0.3.0-0",
+    "@deepseek-ai/dsh-llm": ">=0.2.0-rc.1 <0.2.1-0 || >=0.2.2-rc.1 <0.3.0-0",
+    "@deepseek-ai/dsh-tools": ">=0.2.0-rc.1 <0.2.1-0 || >=0.2.2-rc.1 <0.3.0-0"
   },
   "peerDependenciesMeta": {
     "@deepseek-ai/cordis": {
@@ -63,7 +63,12 @@
       "patch": "./cordis.patch.yml"
     },
     "engines": {
-      "dsh": ">=0.2.0-rc.1"
-    }
+      "dsh": ">=0.2.0-rc.1 <0.2.1-0 || >=0.2.2-rc.1 <0.3.0-0"
+    },
+    "minVersion": "0.2.0-rc.1",
+    "testedVersion": "0.2.2-rc.1"
+  },
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
   }
 }
