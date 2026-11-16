@@ -1,0 +1,16 @@
+{
+  "name": "dsh-page-images",
+  "private": true,
+  "version": "0.0.0",
+  "description": "DeepSeek Harness plugins that turn a document attachment into one image per page and post the pages back into the conversation",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test:pdf": "node packages/dsh-pdf-pages/test/smoke.mjs",
+    "test:slides": "node packages/dsh-slide-pages/test/smoke.mjs",
+    "pack:all": "pnpm -r pack"
+  },
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  }
+}

@@ -1,0 +1,19 @@
+# dsh-slide-pages — render a presentation attachment into slide images in the chat.
+#
+# One Host row. The deck goes through LibreOffice's PDF export and is then
+# rasterized by PDFium, because the engine's direct presentation raster clips
+# slide content.
+- insert:
+    - id: slide-pages
+      name: dsh-slide-pages
+      config:
+        autoConvert: true
+        autoMaxSlides: 8
+        autoMaxAttachments: 2
+        dpi: 110
+        maxSlidesPerCall: 24
+        outline: true
+        outlineBodyChars: 300
+        outlineNotesChars: 160
+        outlineTotalChars: 8000
+        timeoutMs: 300000

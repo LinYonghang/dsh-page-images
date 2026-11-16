@@ -1,0 +1,14 @@
+# dsh-pdf-pages — render a PDF attachment into page images inside the chat.
+#
+# One Host row; the plugin needs no Client half because the images ride the
+# ordinary user-message attachment pipeline.
+- insert:
+    - id: pdf-pages
+      name: dsh-pdf-pages
+      config:
+        autoConvert: true
+        autoMaxPages: 10
+        autoMaxAttachments: 2
+        dpi: 110
+        maxPagesPerCall: 24
+        timeoutMs: 180000
