@@ -1,6 +1,6 @@
 {
   "name": "dsh-slide-pages",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Render the presentation attached to a DSH message into one image per slide and post the slides back into the conversation",
   "type": "module",
   "main": "lib/index.js",

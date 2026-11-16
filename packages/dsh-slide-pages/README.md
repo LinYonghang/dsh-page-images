@@ -26,8 +26,8 @@
 插件依赖 `@deepseek-ai/libreoffice-kit`、`@deepseek-ai/dsh-tools`、`@deepseek-ai/dsh-llm` 等**随 DSH 发行版提供**的包，profile 的包解析器会让它们从安装目录解析；`fflate` 也是随发行版提供的。所以插件本身不需要安装任何第三方依赖。
 
 ```sh
-npm pack                     # 得到 dsh-slide-pages-0.1.0.tgz
-dsh plugin --profile desktop add ./dsh-slide-pages-0.1.0.tgz
+npm pack                     # 得到 dsh-slide-pages-0.1.1.tgz
+dsh plugin --profile desktop add ./dsh-slide-pages-0.1.1.tgz
 # 再把 "dsh-slide-pages" 加入 ~/.dsh/profiles/desktop/package.json 的 dsh.profile.bundles
 ```
 

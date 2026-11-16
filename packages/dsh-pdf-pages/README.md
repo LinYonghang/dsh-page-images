@@ -27,10 +27,10 @@ dsh plugin --profile desktop add github:LinYonghang/dsh-page-images#path:/packag
 
 ```sh
 # 1. 打包（在插件目录内）
-npm pack                     # 得到 dsh-pdf-pages-0.1.0.tgz
+npm pack                     # 得到 dsh-pdf-pages-0.1.1.tgz
 
 # 2. 装进某个 profile（示例：desktop）
-dsh plugin --profile desktop add ./dsh-pdf-pages-0.1.0.tgz
+dsh plugin --profile desktop add ./dsh-pdf-pages-0.1.1.tgz
 
 # 3. 把 bundle 登记进 profile 组合
 #    编辑 ~/.dsh/profiles/desktop/package.json，在 dsh.profile.bundles 里加入 "dsh-pdf-pages"

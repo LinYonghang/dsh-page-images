@@ -31,8 +31,8 @@ dsh plugin --profile desktop add github:LinYonghang/dsh-page-images#path:/packag
 ```sh
 git clone https://github.com/LinYonghang/dsh-page-images
 cd dsh-page-images && pnpm -r pack          # 每个包出一个 tgz
-dsh plugin --profile desktop add ./packages/dsh-pdf-pages/dsh-pdf-pages-0.1.0.tgz
-dsh plugin --profile desktop add ./packages/dsh-slide-pages/dsh-slide-pages-0.1.0.tgz
+dsh plugin --profile desktop add ./packages/dsh-pdf-pages/dsh-pdf-pages-0.1.1.tgz
+dsh plugin --profile desktop add ./packages/dsh-slide-pages/dsh-slide-pages-0.1.1.tgz
 ```
 
 装完记得把包名加进 profile `package.json` 的 `dsh.profile.bundles`（插件管理页会替你写）。
